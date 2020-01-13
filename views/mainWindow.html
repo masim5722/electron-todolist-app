@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+</head>
+<body class="main-window">
+    <div id="dragWindow" class="container-fluid-nav titlebar p-0 m-0">
+        <nav class="navbar navbar-dark bg-dark p-0 m-0 draggable">
+            <label class="text-white mb-0 ml-2 title draggable">
+                <!-- <button class="add-button" id="add" title="Add New Todo Item"><i class="fa fa-plus"></i></button> -->
+            </label> 
+            <button class="close-button not-draggable" id="close" title="Close"><i class="fa fa-times"></i></button>
+        </nav>
+    </div>
+    
+    <div class="container-fluid-nav content">
+        <form>
+            <div class="modal-body border-0 p-2 bg-add-todo">
+                <input type="text" class="form-control add-todo" id="item" required placeholder="Add new todo item"> 
+            </div>
+            <hr class="m-0">
+        </form>
+        <div class="list-wrapper">
+            <div id="message" class="col-lg-12"></div>
+            <ul class="d-flex flex-column-reverse todo-list p-2">
+            </ul>
+        </div>
+    </div>
+    <script src="../renderer/mainWindow.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Todo list Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.todo.list",
+    "productName": "Todo List",
+    "win":{
+      "icon" : "build/icon.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": true
+    }
+  },
+  "author": "Muhammad Asim",
+  "license": "MIT",
+  "dependencies": {
+    "electron-json-storage": "^4.1.8",
+    "electron-store": "^5.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.1.1",
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0"
+  }
+}
