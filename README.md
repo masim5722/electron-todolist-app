@@ -3,8 +3,13 @@
 This is a todo app developed in Electron Js. This app has following functionalities
 - Show all todo items on main window
 - Add new todo item from main window
+- Mark todo item as completed
+- Delete todo item
 - Positioning of application window
 - Saving data to system in json format
+
+![Image of Todo App](https://drive.google.com/uc?export=view&id=1Bm6vJnNwVLQVZJ2paBakN43lCUVZ6Z3n)
+
 # Quick Start
 
 **Clone and run for a quick way to see Todo Application in action.**
